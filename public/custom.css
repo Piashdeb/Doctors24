@@ -1,0 +1,12 @@
+.user-profile {
+    text-align: center;
+}
+
+.user-avatar img {
+    max-width: 72%;
+}
+section {
+    padding-top: 4rem;
+    padding-bottom: 0rem;
+    background-color: #f1f4fa;
+}
