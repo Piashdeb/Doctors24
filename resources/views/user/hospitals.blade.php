@@ -8,7 +8,7 @@ About
     <div class="banner_inner d-flex align-items-center">
         <div class="container">
             <div class="banner_content text-left">
-                <h2>About Us</h2>
+                <h2>Hospitals</h2>
                 <div class="page_link">
                     <a href="#">Home</a>
                     <a href="#">Hospitals</a>
@@ -19,7 +19,7 @@ About
 </section>
 <section>
     <div class="form-group mc">
-		<h2 class="text-center" style="background-color:#272327;color: #fff;">Public Medical College in Bangladesh</h2>
+		<h2 class="text-center" style="background-color:#272327;color: #fff;"><marquee behavior="" direction="">Public Medical College in Bangladesh</marquee></h2>
 
                               <table cellpadding="10" cellspacing="10" class="table table-hover">
 

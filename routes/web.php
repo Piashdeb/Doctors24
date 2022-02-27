@@ -16,7 +16,7 @@
     Route::get('department','User\DepartmentController@index');
 
     Route::get('doctors','User\DoctorsController@index');
-    Route::get('doctor/details/{id}','User\DoctorsController@doctor_details');
+    Route::get('doctor/details/{id}','User\DoctorsController@doctor_details')->middleware('auth');
     Route::get('doctors/all','User\DoctorsController@all_doctors');
     Route::get('doctors/dept_wise/{id}','User\DoctorsController@dept_wise');
     Route::get('doctors/search','User\DoctorsController@itemSearch');
@@ -26,7 +26,7 @@
     Route::post('profile-update', 'User\ProfileController@update_profile')->middleware('auth');
 
 
-    Route::post('appointment','User\AppointmentController@save');
+    Route::post('appointment','User\AppointmentController@save')->middleware('auth');
 
     Route::get('blog','User\BlogController@index');
     Route::get('blog/categorywise/{id}','User\BlogController@category_wise');

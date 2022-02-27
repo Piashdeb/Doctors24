@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\User;
 use App\User;
+use App\Appointment;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -9,7 +10,8 @@ class ProfileController extends Controller
 {
     public function index()
     {
-        return view('user.profile');
+        $appointments = Appointment::where('patientID', auth()->user()->id)->get();
+        return view('user.profile', compact('appointments'));
     }
 
     public function profile_setting()

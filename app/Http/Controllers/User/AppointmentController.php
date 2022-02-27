@@ -36,6 +36,7 @@ class AppointmentController extends Controller
         $table->appointmentTime = $appointment_date;
         $table->serialNo = ($maxValue + 1);
         $table->doctorID = $request->doctorID;
+        $table->patientID = auth()->user()->id;
         $table->save();
 
         return redirect()->back()->with('message','Appointment successful & Your serial No is :'.$table->serialNo);

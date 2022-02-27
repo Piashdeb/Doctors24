@@ -9,7 +9,7 @@ class Doctors extends Model
     protected $table = 'doctors';
     protected $primaryKey = 'doctorID';
     protected $fillable = [
-        'name', 'email','imageName','contactNo','chamber','available_day','departmentID','other_details'
+        'name', 'email','imageName','contactNo','chamber','available_day','departmentID','other_details', 'user_id'
     ];
     public function scopeSearch($query, $search){
         return $query->where('name','like','%'.$search.'%')

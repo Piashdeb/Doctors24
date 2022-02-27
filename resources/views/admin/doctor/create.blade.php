@@ -45,6 +45,12 @@
                         </div>
                     </div>
                     <div class="control-group">
+                        <label class="control-label" for="basicinput">Password</label>
+                        <div class="controls">
+                            <input name="password" type="password" id="basicinput" placeholder="Type password" class="span8">
+                        </div>
+                    </div>
+                    <div class="control-group">
                         <label class="control-label" for="basicinput">Contact No</label>
                         <div class="controls">
                             <input name="contactNo" type="text" id="basicinput" placeholder="Type Phone No..." class="span8">

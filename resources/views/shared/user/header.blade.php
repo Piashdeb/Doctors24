@@ -63,28 +63,40 @@
                                 </li>
                                 <li class="nav-item {{ (Request::is('about') ? 'active' : '')}}">
                                     <a class="nav-link" href="{{action('User\AboutController@index')}}">About</a>
-                                    </li>
-                                <li class="nav-item {{ (Request::is('department') ? 'active' : '')}}">
-                                    <a class="nav-link" href="{{action('User\DepartmentController@index')}}">Departments</a>
-                                </li>
-                                <li class="nav-item {{ (Request::is('doctors') ? 'active' : '')}}">
-                                    <a class="nav-link" href="{{action('User\DoctorsController@index')}}">Doctors</a>
                                 </li>
                                 <li class="nav-item {{ (Request::is('blog') ? 'active' : '')}}">
                                     <a class="nav-link" href="{{action('User\BlogController@index')}}">Blog</a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{action('User\HomeController@hospital')}}">Hospitals</a>
+                                <li class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropbtn">Features</a>
+                                    <div class="dropdown-content">
+                                        <a href="{{action('User\DoctorsController@index')}}">Doctors List</a>
+                                        <a href="{{action('User\HomeController@hospital')}}">Hospital List</a>
+                                        <a href="{{action('User\DepartmentController@index')}}">Department List</a>
+                                        <a target="_blank" href="https://surokkha.gov.bd/">Surokkha (Vaccine Registration)</a>
+                                      </div>
                                 </li>
+                                @auth
                                 <li class="nav-item {{ (Request::is('profile') ? 'active' : '')}}">
                                     <a class="nav-link" href="{{ url('profile') }}">Profile</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('login') }}">Login</a>
+                                    <a class="nav-link" href="{{ route('logout') }}"
+                                    onclick="event.preventDefault();
+                                                  document.getElementById('logout-form').submit();">Logout</a>
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                        @csrf
+                                    </form>
+                                </li>
+                                @endauth
+                                @guest
+                                <li class="nav-item">
+                                    <a class="nav-link text-primary" href="{{ route('login') }}">Login</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">Register</a>
+                                    <a class="nav-link text-primary" href="{{ route('register') }}">Register</a>
                                 </li>
+                                @endguest
                             </ul>
                         </div>
                     </div>

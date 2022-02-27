@@ -109,7 +109,7 @@
                             </div>
                             <input id="" name="age" class="dates form-control" placeholder="age ex: 25 years 10 months" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'age ex: 25 years 10 months'">
                             <input id="" name="address" class="dates form-control" placeholder="address" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'address'">
-                            <input type="text" class="form-control" name="phone" placeholder="Phone " onfocus="this.placeholder = ''" onblur="this.placeholder = 'Phone'">
+                            <input type="text" class="form-control" name="phone" placeholder="Phone " onfocus="this.placeholder = ''" onblur="this.placeholder = 'Phone'" maxlength="11">
                             <input type="email" class="form-control" name="email" placeholder="Email Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address'">
                             <p style="margin-bottom: -7px;">Prefer Appointment Date</p>
                             <input name="prefer_date" class="dates form-control" type="date">
