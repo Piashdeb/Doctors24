@@ -11,6 +11,7 @@
 |
 */
     Route::get('/','User\HomeController@index');
+    Route::get('hospitals','User\HomeController@hospital');
     Route::get('about','User\AboutController@index');
     Route::get('department','User\DepartmentController@index');
 

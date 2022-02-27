@@ -74,7 +74,7 @@
                                     <a class="nav-link" href="{{action('User\BlogController@index')}}">Blog</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Contact</a>
+                                    <a class="nav-link" href="{{action('User\HomeController@hospital')}}">Hospitals</a>
                                 </li>
                                 <li class="nav-item {{ (Request::is('profile') ? 'active' : '')}}">
                                     <a class="nav-link" href="{{ url('profile') }}">Profile</a>
