@@ -28,10 +28,12 @@ class LoginController extends Controller
      */
     //protected $redirectTo = '/home';
     protected function authenticated(){
-        if(Auth::user()->userType != 'Admin'){
-            return redirect('/');
-        }else{
+        if(Auth::user()->userType == 'Admin'){
             return redirect('admin');
+        }elseif (Auth::user()->userType == 'Doctor') {
+            return redirect('doctor/dashboard');
+        }else{
+            return redirect('/');
         }
     }
 

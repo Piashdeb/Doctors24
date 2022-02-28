@@ -92,6 +92,16 @@ Route::group(['middleware' => 'auth'], function () {
     });
     //------------ Admin -----------------
 
+    Route::group([
+        'prefix' => 'doctor'
+    ], function(){
+        Route::get('dashboard', 'Doctor\DashboardController@index');
+        Route::get('appointments', 'Doctor\DashboardController@appointments');
+        Route::get('appointments/processed', 'Doctor\DashboardController@processed');
+        Route::get('appointment/process/{id}', 'Doctor\DashboardController@processed_app');
+
+    });
+
 });
 Auth::routes();
 

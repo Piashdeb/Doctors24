@@ -29,7 +29,7 @@
                 <ul class="right_side">
                     <li>
                         <a href="#">
-                            <i class="lnr lnr-phone-handset"></i> 012-6532-568-9746
+                            <i class="lnr lnr-phone-handset"></i> +88 01717 846650
                         </a>
                     </li>
                     <li>
