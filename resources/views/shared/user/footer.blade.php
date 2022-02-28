@@ -6,16 +6,16 @@
                     <h6>Top Products</h6>
                     <ul class="footer-nav">
                         <li>
-                            <a href="#">Managed Website</a>
+                            <a href="#">About</a>
                         </li>
                         <li>
-                            <a href="#">Manage Reputation</a>
+                            <a href="#">Blogs</a>
                         </li>
                         <li>
-                            <a href="#">Power Tools</a>
+                            <a href="#">Help/FAQ</a>
                         </li>
                         <li>
-                            <a href="#">Marketing Service</a>
+                            <a href="#">Carrers</a>
                         </li>
                     </ul>
                 </div>
@@ -24,15 +24,19 @@
                 <div class="single-footer-widget mail-chimp">
                     <h6 class="mb-20">Contact Us</h6>
                     <p>
-                        56/8, Santa bullevard, Rocky beach, San fransisco, Los angeles, USA
+                        95 Hafiz Tower, Lamabazar, Sylhet
                     </p>
-                    <h3>012-6532-568-9746</h3>
-                    <h3>012-6532-568-97468</h3>
+                    <p>For any queries please contact</p>
+                    <h3>+880 1717-846650</h3>
+
+                    <h3>help@doctor24.com</h3>
                 </div>
             </div>
             <div class="col-lg-6  col-md-12">
                 <div class="single-footer-widget newsletter">
-                    <h6>Newsletter</h6>
+
+                    <p>A Great Place to Work. A Great Place to Receive Care.</p>
+                    <br>
                     <p>You can trust us. we only send promo offers, not a single spam.</p>
                     <div id="mc_embed_signup">
                         <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="form-inline">
