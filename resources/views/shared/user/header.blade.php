@@ -45,8 +45,8 @@
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container">
                 <!-- Brand and toggle get grouped for better mobile display -->
-                <a style='font: 502 21px/80px "Roboto", sans-serif;color: #78249dc2;' class="navbar-brand logo_h" href="index.html">
-                    Doctors<span style="font-size: 26px;color: #37a0bf;font-weight: 600;">24</span>
+                <a style='font: 502 21px/80px "Roboto", sans-serif;color: #78249dc2;' class="navbar-brand logo_h" href="{{action('User\HomeController@index')}}">
+                    Doctors<span style="font-size: 26px;color: #37a0bf;font-weight: 600;">24/7</span>
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="icon-bar"></span>

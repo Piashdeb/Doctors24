@@ -81,7 +81,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    Doctors <span>24/7</span>
                 </div>
 
                 <div class="links">
