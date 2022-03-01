@@ -74,10 +74,8 @@
                     <h1>
                         Servicing Hours
                     </h1>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    </p>
-                    <ul class="time-list">
+                    <h2 class="text-{{ $table->isAvailable == 0 ? 'danger' : 'success' }}">{{ $table->isAvailable == 0 ? 'Appointment is not available' : 'Appointment is available' }}</h2>
+                    {{-- <ul class="time-list">
                         <li class="d-flex justify-content-between">
                             <span>Monday-Friday</span>
                             <span>08.00 am - 10.00 pm</span>
@@ -90,7 +88,7 @@
                             <span>Sunday</span>
                             <span>08.00 am - 10.00 pm</span>
                         </li>
-                    </ul>
+                    </ul> --}}
                 </div>
                 <div class="col-lg-6 col-md-6 pt-60 pb-60">
                     <div class="appointment-right">
@@ -98,26 +96,26 @@
                             @csrf
                             <input type="hidden" name="doctorID" value="{{$table->doctorID}}">
                             <h3 class="pb-20 text-center mb-20">Book an Appointment</h3>
-                            <input type="text" class="form-control" name="name" placeholder="Patient Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Patient Name'">
+                            <input {{ $table->isAvailable == 0 ? 'readonly' : '' }} type="text" class="form-control" name="name" placeholder="Patient Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Patient Name'">
                             <div class="form-select" id="service-select">
-                                <select name="gender" class="">
+                                <select {{ $table->isAvailable == 0 ? 'disabled' : '' }} name="gender" class="">
                                     <option value="">Select a gender</option>
                                     <option value="Male">Male</option>
                                     <option value="Female">Female</option>
                                     <option value="Others">Others</option>
                                 </select>
                             </div>
-                            <input id="" name="age" class="dates form-control" placeholder="age ex: 25 years 10 months" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'age ex: 25 years 10 months'">
-                            <input id="" name="address" class="dates form-control" placeholder="address" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'address'">
-                            <input type="text" class="form-control" name="phone" placeholder="Phone " onfocus="this.placeholder = ''" onblur="this.placeholder = 'Phone'" maxlength="11">
-                            <input type="email" class="form-control" name="email" placeholder="Email Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address'">
+                            <input {{ $table->isAvailable == 0 ? 'readonly' : '' }} id="" name="age" class="dates form-control" placeholder="age ex: 25 years 10 months" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'age ex: 25 years 10 months'">
+                            <input {{ $table->isAvailable == 0 ? 'readonly' : '' }} id="" name="address" class="dates form-control" placeholder="address" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'address'">
+                            <input {{ $table->isAvailable == 0 ? 'readonly' : '' }} type="text" class="form-control" name="phone" placeholder="Phone " onfocus="this.placeholder = ''" onblur="this.placeholder = 'Phone'" maxlength="11">
+                            <input {{ $table->isAvailable == 0 ? 'readonly' : '' }} type="email" class="form-control" name="email" placeholder="Email Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address'">
                             <p style="margin-bottom: -7px;">Prefer Appointment Date</p>
-                            <input name="prefer_date" class="dates form-control" type="date">
+                            <input {{ $table->isAvailable == 0 ? 'readonly' : '' }} name="prefer_date" class="dates form-control" type="date">
                             <p style="margin-bottom: -7px;">Prefer Appointment Time</p>
-                            <input name="prefer_time" class="dates form-control" type="time">
-                            <textarea name="message" class="" rows="5" placeholder="Messege" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Messege'"></textarea>
+                            <input {{ $table->isAvailable == 0 ? 'readonly' : '' }} name="prefer_time" class="dates form-control" type="time">
+                            <textarea {{ $table->isAvailable == 0 ? 'readonly' : '' }} name="message" class="" rows="5" placeholder="Messege" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Messege'"></textarea>
                             <div class="text-center confirm_btn_box">
-                                <button type="submit" class="main_btn text-uppercase">Confirm Booking</button>
+                                <button {{ $table->isAvailable == 0 ? 'disabled' : '' }} type="submit" class="main_btn text-uppercase">Confirm Booking</button>
                             </div>
                         </form>
                     </div>

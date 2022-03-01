@@ -49,4 +49,11 @@ class ProfileController extends Controller
 
         return back();
     }
+
+    public function invoice($id)
+    {
+        $appointment = Appointment::where('appointmentID', $id)->firstOrFail();
+
+        return view('user.invoice', compact('appointment'));
+    }
 }

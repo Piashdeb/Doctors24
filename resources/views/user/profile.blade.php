@@ -61,6 +61,7 @@
                                         <th scope="col">Doctor</th>
                                         <th scope="col">Time</th>
                                         <th scope="col">Status</th>
+                                        <th scope="col">Invoice</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -73,6 +74,9 @@
                                         <td>{{ $item->doctor->name }}</td>
                                         <td>{{ $item->appointmentTime }}</td>
                                         <td><span class="badge badge-{{ $item->status == 'Pending' ? 'warning' : 'success' }}">{{ $item->status }}</span></td>
+                                        <td>
+                                            <a href="{{action('User\ProfileController@invoice', $item->appointmentID)}}">invoice</a>
+                                        </td>
                                     </tr>
                                     @endforeach
                                 </tbody>

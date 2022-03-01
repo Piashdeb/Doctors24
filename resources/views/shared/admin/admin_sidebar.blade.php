@@ -27,11 +27,17 @@
         <ul class="widget widget-menu unstyled">
             <li><a href="{{action('Doctor\DashboardController@appointments')}}"><i class="menu-icon icon-bell"></i>New Appointments </a></li>
             <li><a href="{{action('Doctor\DashboardController@processed')}}"><i class="menu-icon icon-wrench"></i> Processed </a></li>
+            <li><a href="{{action('Doctor\DashboardController@available_status_Update')}}" onclick="event.preventDefault();
+                document.getElementById('availability_check').submit();"><i class="menu-icon icon-signout"></i>{{ auth()->user()->doctor->isAvailable == 1 ? 'Available' : 'Unavailable' }} </a>
+            </li>
+            <form id="availability_check" action="{{ action('Doctor\DashboardController@available_status_Update') }}" method="POST" style="display: none;">
+                @csrf
+            </form>
         </ul>
         @endif
         <ul class="widget widget-menu unstyled">
-            <li><a href="{{route('logout')}}" onclick="event.preventDefault();
-                document.getElementById('logout-form').submit();"><i class="menu-icon icon-signout"></i>Logout </a>
+            <li><a href="{{route('logout')}}" onclick="return confirm('Are you sure?'); event.preventDefault();
+                document.getElementById('logout-form').submit();"><i class="menu-icon icon-signout"></i>logout</a>
             </li>
             <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                 @csrf

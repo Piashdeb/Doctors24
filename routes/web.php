@@ -22,6 +22,7 @@
     Route::get('doctors/search','User\DoctorsController@itemSearch');
 
     Route::get('profile', 'User\ProfileController@index')->middleware('auth');
+    Route::get('profile/appointment/{id}/invoice', 'User\ProfileController@invoice')->middleware('auth');
     Route::get('profile-setting', 'User\ProfileController@profile_setting')->middleware('auth');
     Route::post('profile-update', 'User\ProfileController@update_profile')->middleware('auth');
 
@@ -96,6 +97,9 @@ Route::group(['middleware' => 'auth'], function () {
         'prefix' => 'doctor'
     ], function(){
         Route::get('dashboard', 'Doctor\DashboardController@index');
+        Route::get('profile/{slug}', 'Doctor\DashboardController@profile');
+        Route::post('profile/available-status-update', 'Doctor\DashboardController@available_status_Update');
+        Route::post('profile/update', 'Doctor\DashboardController@update_profile');
         Route::get('appointments', 'Doctor\DashboardController@appointments');
         Route::get('appointments/processed', 'Doctor\DashboardController@processed');
         Route::get('appointment/process/{id}', 'Doctor\DashboardController@processed_app');

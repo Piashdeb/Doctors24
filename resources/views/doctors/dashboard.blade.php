@@ -13,10 +13,13 @@
                 </a><a href="#" class="btn-box big span4"><i class="icon-group"></i><b>15</b>
                     <p class="text-muted">
                         New Users</p>
-                </a><a href="#" class="btn-box big span4"><i class="icon-book"></i><b>15,152</b>
-                    <p class="text-muted">
-                        Books</p>
                 </a>
+                <form action="{{action('Doctor\DashboardController@available_status_Update')}}" method="POST">
+                    <button type="submit" onclick="return confirm('Are You sure to change the available status?')" class="btn-box big span4"><i class="icon-book"></i><b>15,152</b>
+                        <p class="text-muted">
+                            Books</p>
+                    </button>
+                </form>
             </div>
 
             <div class="btn-box-row row-fluid">
