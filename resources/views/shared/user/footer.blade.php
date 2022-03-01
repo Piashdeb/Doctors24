@@ -1,9 +1,10 @@
 <footer class="footer-area section_gap">
     <div class="container">
         <div class="row">
-            <div class="col-lg-2  col-md-6">
+            <div class="col-lg-3  col-md-6">
                 <div class="single-footer-widget">
-                    <h6>Top Products</h6>
+                    <h2 class="text-light">Doctors<span style="color: cadetblue;">24/7</span></h2>
+                    <br>
                     <ul class="footer-nav">
                         <li>
                             <a href="#">About</a>
@@ -32,7 +33,7 @@
                     <h3>help@doctor24.com</h3>
                 </div>
             </div>
-            <div class="col-lg-6  col-md-12">
+            <div class="col-lg-5  col-md-12">
                 <div class="single-footer-widget newsletter">
 
                     <p>A Great Place to Work. A Great Place to Receive Care.</p>
@@ -42,12 +43,12 @@
                         <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="form-inline">
 
                             <div class="form-group row">
-                                <div class="col-lg-7 col-md-6 col-sm-12">
+                                <div class="col-lg-6 col-md-6 col-sm-12">
                                     <input name="EMAIL" placeholder="Your Email Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Email Address '" required="" type="email">
                                 </div>
 
-                                <div class="col-lg-5 col-md-12">
-                                    <button class="nw-btn main_btn circle">get started
+                                <div class="col-lg-6 col-md-12">
+                                    <button class="nw-btn main_btn circle">Get started
                                         <span class="lnr lnr-arrow-right"></span>
                                     </button>
                                 </div>

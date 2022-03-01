@@ -119,7 +119,7 @@
                             <div class="categories_text">
                                 <div class="border_line"></div>
                                 <a href="single-blog.html">
-                                    <h5>Emergency Treatment</h5>
+                                    <h5>Medicine Specialist</h5>
                                 </a>
                                 <div class="border_line"></div>
                             </div>
@@ -133,7 +133,7 @@
                             <div class="categories_text">
                                 <div class="border_line"></div>
                                 <a href="single-blog.html">
-                                    <h5>Emergency Treatment</h5>
+                                    <h5>Heart Specialist</h5>
                                 </a>
                                 <div class="border_line"></div>
                             </div>
@@ -147,7 +147,7 @@
                             <div class="categories_text">
                                 <div class="border_line"></div>
                                 <a href="single-blog.html">
-                                    <h5>Emergency Treatment</h5>
+                                    <h5>ICU Consultent</h5>
                                 </a>
                                 <div class="border_line"></div>
                             </div>

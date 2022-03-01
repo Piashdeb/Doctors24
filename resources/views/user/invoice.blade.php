@@ -18,7 +18,7 @@
                         <tr>
                             <td class="title">
 
-                                <h2>Doctors<span style="color: cadetblue;">24</span></h2>
+                                <h2>Doctors<span style="color: cadetblue;">24/7</span></h2>
 
                             </td>
 
