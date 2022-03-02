@@ -15,7 +15,7 @@
                 Add Doctor
             </div>
             <div class="pull-right">
-                <a href="{{action('Admin\BlogController@create_blog')}}" class="btn btn-primary">Add Doctors</a>
+                <a href="{{action('Admin\BlogController@create_blog')}}" class="btn btn-primary">Add Blog</a>
             </div>
         </div>
     </div>

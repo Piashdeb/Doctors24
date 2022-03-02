@@ -36,7 +36,7 @@
         </ul>
         @endif
         <ul class="widget widget-menu unstyled">
-            <li><a href="{{route('logout')}}" onclick="return confirm('Are you sure?'); event.preventDefault();
+            <li><a href="{{route('logout')}}" onclick="event.preventDefault();
                 document.getElementById('logout-form').submit();"><i class="menu-icon icon-signout"></i>logout</a>
             </li>
             <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">

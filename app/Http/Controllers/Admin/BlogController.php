@@ -47,6 +47,8 @@ class BlogController extends Controller
         return redirect()->back()->with('message','Category deleted Successfully.');
     }
 
+
+
 // blog
 
     public function blog(){
@@ -86,6 +88,8 @@ class BlogController extends Controller
         $table = Blog::find($id);
         return view('admin.blog.edit')->with(['table'=>$table,'blogcat' => $blogcat]);
     }
+
+    
     public function blog_edit(Request $request){
         $request->validate([
             'title' => 'required',
