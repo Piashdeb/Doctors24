@@ -33,13 +33,13 @@
                     <a href="#">
                         <div class="wrap">
                             <div class="ico-wrap">
-                                <span class="mbr-iconfont fa-calendar fa"></span>
+                                <span class="mbr-iconfont fa fa-user-md"></span>
                             </div>
                             <div class="text-wrap vcenter">
-                                <h2 class="mbr-fonts-style mbr-bold mbr-section-title3 display-5">Doctors
-                                    <span>List</span>
+                                <h2 class="mbr-fonts-style mbr-bold mbr-section-title3 display-5">SEARCH
+                                    <span>DOCTOR</span>
                                 </h2>
-                                <p class="mbr-fonts-style text1 mbr-text display-6">Where you can find many types of doctor
+                                <p class="mbr-fonts-style text1 mbr-text display-6">Find your doctor easily with a minimum of effort. We've kept everything organised for you.
                                 </p>
                             </div>
                         </div>
@@ -49,13 +49,13 @@
                     <a href="#">
                         <div class="wrap">
                             <div class="ico-wrap">
-                                <span class="mbr-iconfont fa-calendar fa"></span>
+                                <span class="mbr-iconfont fa fa-hospital-o"></span>
                             </div>
                             <div class="text-wrap vcenter">
-                                <h2 class="mbr-fonts-style mbr-bold mbr-section-title3 display-5">Hospital's
-                                    <span>List</span>
+                                <h2 class="mbr-fonts-style mbr-bold mbr-section-title3 display-5">BOOK
+                                    <span>APPOINTMENT</span>
                                 </h2>
-                                <p class="mbr-fonts-style text1 mbr-text display-6">Where you can find all Govt. Hospital in Bangladesh </p>
+                                <p class="mbr-fonts-style text1 mbr-text display-6">Ask for an appointment of the doctor quickly with almost a single click. We take care of the rest. </p>
                             </div>
                         </div>
                     </a>
@@ -64,14 +64,13 @@
                     <a href="#">
                         <div class="wrap">
                             <div class="ico-wrap">
-                                <span class="mbr-iconfont fa-calendar fa"></span>
+                                <span class="mbr-iconfont fa fa-building-o"></span>
                             </div>
                             <div class="text-wrap vcenter">
-                                <h2 class="mbr-fonts-style mbr-bold mbr-section-title3 display-5">Create
-                                    <span>An Effective Team</span>
+                                <h2 class="mbr-fonts-style mbr-bold mbr-section-title3 display-5">GET WELL
+                                    <span>SOON</span>
                                 </h2>
-                                <p class="mbr-fonts-style text1 mbr-text display-6">Lorem Ipsum is simply dummy text of the
-                                    printing and typesetting industry. Lorem Ipsum</p>
+                                <p class="mbr-fonts-style text1 mbr-text display-6">Visit the doctor, take the service based on your appointment. Get back to good health and happiness.</p>
                             </div>
                         </div>
                     </a>
@@ -80,14 +79,13 @@
                     <a href="#">
                         <div class="wrap">
                             <div class="ico-wrap">
-                                <span class="mbr-iconfont fa-calendar fa"></span>
+                                <span class="mbr-iconfont fa fa-h-square"></span>
                             </div>
                             <div class="text-wrap vcenter">
-                                <h2 class="mbr-fonts-style mbr-bold mbr-section-title3 display-5">Create
-                                    <span>An Effective Team</span>
+                                <h2 class="mbr-fonts-style mbr-bold mbr-section-title3 display-5">Covid-19
+                                    <span> Vaccine Regrestration</span>
                                 </h2>
-                                <p class="mbr-fonts-style text1 mbr-text display-6">Lorem Ipsum is simply dummy text of the
-                                    printing and typesetting industry. Lorem Ipsum</p>
+                                <p class="mbr-fonts-style text1 mbr-text display-6">The COVID-19 Vaccine can help protect you from getting COVID-19. </p>
                             </div>
                         </div>
                     </a>
@@ -105,8 +103,8 @@
                 <div class="col-lg-12">
                     <h1>Procedure Category</h1>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                        et dolore magna aliqua.
+
+
                     </p>
                 </div>
             </div>
@@ -174,9 +172,7 @@
                         <div class="section-title-wrap text-left">
                             <h1>About Ourself</h1>
                             <p>
-                                nappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct
-                                standards especially in the workplace. That’s why it’s crucial that, as women, our behavior
-                                on the job is beyond reproach.
+                                
                             </p>
                         </div>
 

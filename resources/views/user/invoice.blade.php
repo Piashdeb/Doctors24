@@ -116,6 +116,16 @@
                 </td>
             </tr>
 
+            <tr class="item">
+                <td>
+                    Doctor Chamber
+                </td>
+
+                <td>
+                    {{$appointment->doctor->chamber}}
+                </td>
+            </tr>
+
 
 
 
